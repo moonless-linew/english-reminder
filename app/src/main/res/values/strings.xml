@@ -1,9 +1,14 @@
 <resources>
-    <string name="app_name">EnglishReminder</string>
+    <string name="app_name">English\nReminder</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="words_label">Words</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="add_word">Add word</string>
+    <string name="translation">Translate</string>
+    <string name="definition">Define</string>
+    <string name="nothing">Nothing</string>
+    <string name="hi">Hi</string>
+    <string name="say_hi">say hi</string>
 </resources>
