@@ -8,28 +8,34 @@
     tools:context=".ui.feature.words.MainFragment">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:titleCollapseMode="scale"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:title="@string/your_words"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
             app:expandedTitleGravity="top"
-            >
+            app:titleCollapseMode="fade"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@id/toolbar">
 
-            <include layout="@layout/collapsing_toolbar" />
+            <include
+                android:id="@+id/toolbarContent"
+                layout="@layout/collapsing_toolbar" />
 
-            <com.google.android.material.appbar.MaterialToolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
+                app:title="@string/your_words"
 
                 app:menu="@menu/toolbar_menu" />
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -37,7 +43,7 @@
         android:id="@+id/words_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:listitem="@layout/word_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

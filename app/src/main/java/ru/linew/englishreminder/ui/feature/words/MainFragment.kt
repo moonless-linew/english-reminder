@@ -16,7 +16,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.addWord.setOnClickListener {
-
         }
         binding.wordsList.adapter = adapter
         binding.wordsList.layoutManager = LinearLayoutManager(requireContext())
