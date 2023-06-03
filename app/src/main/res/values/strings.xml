@@ -11,4 +11,9 @@
     <string name="nothing">Nothing</string>
     <string name="hi">Hi</string>
     <string name="say_hi">say hi</string>
+    <string name="search">Search</string>
+    <string name="your_words">Your words</string>
+    <string name="confidence">Confidence</string>
+    <string name="calendar">Calendar</string>
+    <string name="settings">Settings</string>
 </resources>

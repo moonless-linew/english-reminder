@@ -1,5 +1,7 @@
 package ru.linew.englishreminder.ui.feature.words
 
 data class Word(
-    val text: String
+    val word: String,
+    val definition: String? = null,
+    val translation: Translation? = null
 )

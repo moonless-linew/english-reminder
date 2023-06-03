@@ -20,15 +20,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         }
         binding.wordsList.adapter = adapter
         binding.wordsList.layoutManager = LinearLayoutManager(requireContext())
-        adapter.submitList(listOf(
-            Word(""),
-            Word(""),
-            Word(""),
-            Word(""),
-            Word(""),
-            Word(""),
-
-        ))
+        adapter.submitList(TestList.data)
 
     }
 }

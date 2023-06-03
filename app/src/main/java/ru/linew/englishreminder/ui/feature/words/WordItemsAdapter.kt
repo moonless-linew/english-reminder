@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import ru.linew.englishreminder.databinding.WordItemBinding
+import ru.linew.englishreminder.databinding.WordItemContentBinding
 
 class WordItemsAdapter : ListAdapter<Word, WordItemsAdapter.ViewHolder>(WordItemsCallback()) {
     class ViewHolder(val binding: WordItemBinding) :
@@ -22,6 +23,7 @@ class WordItemsAdapter : ListAdapter<Word, WordItemsAdapter.ViewHolder>(WordItem
 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-       holder.binding.textView.text = "ABC DEF"
+        holder.binding.content.word.text = getItem(position).word
+        holder.binding.content.definition.text = getItem(position).definition
     }
 }

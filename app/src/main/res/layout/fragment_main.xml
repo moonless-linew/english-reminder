@@ -17,8 +17,9 @@
             android:layout_height="300dp"
             app:titleCollapseMode="scale"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:title="Collapsing"
-            app:expandedTitleGravity="top">
+            app:title="@string/your_words"
+            app:expandedTitleGravity="top"
+            >
 
             <include layout="@layout/collapsing_toolbar" />
 
@@ -27,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
+
                 app:menu="@menu/toolbar_menu" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
