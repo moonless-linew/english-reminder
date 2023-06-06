@@ -16,4 +16,38 @@
     <string name="confidence">Confidence</string>
     <string name="calendar">Calendar</string>
     <string name="settings">Settings</string>
+    <string name="search_words">Search words</string>
+    <string name="search_bar_description">Click to start search</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. In imperdiet congue aliquam.
+        Sed vitae est a nibh egestas semper non id orci. Quisque non
+        feugiat justo, eu elementum tellus. Quisque ornare enim nisl,
+        at ultrices nunc sodales non. Nulla facilisi. Cras semper et
+        erat eu elementum. Sed interdum, urna non lacinia luctus, felis
+        erat elementum nisi, sed interdum velit tellus ut nisl.
+        Donec eget imperdiet ligula. Suspendisse sed efficitur tortor, vitae
+        feugiat tortor. Praesent luctus posuere ligula at egestas. Vestibulum ex
+        libero, sagittis id volutpat nec, porttitor at eros. Duis placerat, elit id
+        sagittis cursus, nisi felis posuere metus, vitae lobortis augue tellus et nunc. Maecenas
+        mattis ante eu aliquet congue. Sed volutpat, turpis nec condimentum condimentum, dui elit
+        pulvinar ligula, eget mattis quam risus in sapien. Quisque sollicitudin ligula eu quam
+        molestie, ac pulvinar ex lobortis. Donec non varius leo. Sed lacinia mattis tellus
+        venenatis rhoncus. Fusce magna velit, consectetur vel augue a, vestibulum feugiat lacus.
+        Curabitur a lectus sed odio efficitur bibendum et eget dolor. Curabitur felis nunc, fringilla
+        tempor diam sed, faucibus ornare enim. Nunc ultrices felis a dui congue, in commodo
+        leo commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+        ac turpis egestas. Mauris vestibulum laoreet vehicula. Integer a pulvinar lorem. Aenean
+        laoreet, turpis ac pulvinar ornare, odio purus vulputate massa, nec ultrices augue lorem
+        ac lacus. Sed tristique lorem at risus convallis convallis. Nulla feugiat non erat non
+        varius. Vivamus faucibus elementum quam, posuere consectetur lacus laoreet et. Vestibulum
+        gravida tristique cursus. In tristique nibh elit, ac porta diam pretium in. Mauris blandit
+        arcu in lectus finibus mattis. Praesent in fermentum diam.
+        Quisque convallis lectus id fermentum hendrerit. Nullam porta odio
+        nisl, a elementum metus malesuada eu. Mauris pretium, libero at scelerisque aliquet,
+        tellus dolor interdum dui, ut malesuada lectus eros eu nisi. Quisque tincidunt volutpat
+        vestibulum. Ut pharetra id tortor eu posuere. Donec sed risus at diam ornare commodo id
+        interdum ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec mattis
+        leo. Suspendisse dignissim sodales velit. Sed nibh nulla, hendrerit non nisl id, fringilla
+        placerat arcu. Suspendisse id purus a quam tempor gravida eu at leo. Vestibulum orci nunc,
+        laoreet posuere odio quis, pulvinar dignissim metus</string>
 </resources>

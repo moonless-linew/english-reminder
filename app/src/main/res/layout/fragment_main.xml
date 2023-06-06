@@ -4,47 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".ui.feature.words.MainFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/collapsing_toolbar"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:expandedTitleGravity="top"
-            app:titleCollapseMode="fade"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@id/toolbar">
-
-            <include
-                android:id="@+id/toolbarContent"
-                layout="@layout/collapsing_toolbar" />
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/your_words"
+            app:menu="@menu/toolbar_menu"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_marginHorizontal="8dp">
+            <com.google.android.material.search.SearchBar
+                android:id="@+id/searchBar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:title="@string/your_words"
-
-                app:menu="@menu/toolbar_menu" />
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
+                android:layout_height="match_parent"
+                android:hint="@string/search_words"
+                app:defaultScrollFlagsEnabled="false"
+                android:layout_marginEnd="16dp"
+                style="@style/Widget.Material3.SearchBar.Outlined"
+                app:defaultMarginsEnabled="false"
+                android:layout_marginVertical="8dp"/>
+        </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:transitionGroup="true"
         android:id="@+id/words_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:listitem="@layout/word_item" />
+
+    <com.google.android.material.search.SearchView
+        app:autoShowKeyboard="true"
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/search_words"
+        app:layout_anchor="@id/searchBar">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/queryHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </com.google.android.material.search.SearchView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_word"

@@ -9,5 +9,14 @@
         android:id="@+id/FirstFragment"
         android:name="ru.linew.englishreminder.ui.feature.words.MainFragment"
         android:label="@string/words_label"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_FirstFragment_to_wordInfoFragment"
+            app:destination="@id/wordInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordInfoFragment"
+        android:name="ru.linew.englishreminder.ui.feature.words.WordInfoFragment"
+        android:label="WordInfoFragment"
+        tools:layout="@layout/fragment_word_info"/>
 </navigation>
